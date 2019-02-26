@@ -1,3 +1,7 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
 const int MAXG = 1000000;
 vector<int> graph[MAXG + 1];
 bool vis[MAXG + 1];

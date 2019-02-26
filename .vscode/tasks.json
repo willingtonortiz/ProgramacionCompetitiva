@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build_ex",
+			"type": "shell",
+			"command": "g++",
+			"args": ["-g", "./Tester/Main.cpp"],
+			"presentation": {
+				"reveal": "never"
+			}
+		},
+		{
+			"label": "execute",
+			"type": "shell",
+			"command": "a.exe < ./Tester/input.txt > ./Tester/output.txt",
+			"presentation": {
+				"reveal": "never"
+			}
+		},
+		{
+			"label": "Build_Execute",
+			"dependsOn": ["build_ex", "execute"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
